@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journey</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="IMG/ico/logo-white.png">
+  <!--Include bootsrtap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- links footer -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="senac.css">
+
+</head>
+
+<body>
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loader"></div>
+    <p>Carregando...</p>
+  </div>
+
+
+  <!-- Menu off-canvas -->
+  <div id="menu" class="menuu">
+    <div class="bgogin">
+      <div class="contLogin">
+        <button id="closeMenuBtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="input_login">
+          <h1>Faça seu Login</h1>
+          <div class="email">Email <br> <input type="email" name="emailLogin" id=""></div>
+          <div class="loginSenha">Senha <br> <input type="password" name="senha" id=""></div>
+          <div class="esqSenha"><a href="#">Esqueci minha senha</a></div>
+          <div><button>LOGIN</button></div>
+        </div>
+        <div class="logosL">
+          <div class="logosLogin">
+            <img src="IMG/logosLogin.png" alt="">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  
+  </div>
+
+  <div id="menu" class="menuu">
+    <div class="bgogin">
+      <div class="contLogin">
+        <button id="closeMenuBtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="input_login">
+          <h1>Esqueci minha senha</h1>
+          <div class="email">Email <br> <input type="email" name="emailLogin" id=""></div>
+          <div class="loginSenha">Senha <br> <input type="password" name="senha" id=""></div>
+          <div class="esqSenha"><a href="#">Esqueci minha senha</a></div>
+          <div><button>LOGIN</button></div>
+        </div>
+        <div class="logosL">
+          <div class="logosLogin">
+            <img src="IMG/logosLogin.png" alt="">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay"></div>
+
+  <header>
+    <div class="header">
+      <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col-1">
+            <a href="#" class="logo"><img src="img/Senac_logo.svg.png" alt="logo 1"
+                style="width: 100%; height: 100%;"></a>
+          </div>
+          <div class="col-1">
+            <a href="#" class="logo"><img src="img/logo grande.png" alt="logo 1" style="width: 76%; height: 76%;"></a>
+          </div>
+          <div class="col-5">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button type="button" class="btn btn-outline-secondary" id="btn-pesquisa"
+                style=" border-color: transparent;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4270A7" class="bi bi-search"
+                  id="btn2" viewBox="0 0 16 16" style="margin-bottom: 20%;">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                  </path>
+                </svg>
+                <span class="visually-hidden">Button</span>
+              </button>
+            </form>
+          </div>
+
+
+          <div class="col">
+            <!-- Botão para abrir o menu off-canvas -->
+            <button class="contaBtn" id="openMenuBtn">ACESSE SUA CONTA</button>
+          </div>
+          <div class="col">
+            <a href="../LoginRegPage/cadastro.html"><button type="button" class="btn btn-outline-primary" id="cor">CADASTRE-SE</button></a>
+
+          </div>
+          <div class="col">
+          </div>
+
+        </div>
+      </div>
+  </header>
+
+
+
+
+  <!-- CARROSSEL -->
+  <section style="padding: 10%;" class="carrossell">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="IMG/Banner 1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="IMG/banner 2 tamanho certo.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="IMG/banner 3 tamanho certo.png" class="d-block w-100" alt="...">
+        </div>
+        <button class="carousel-control-prev custom-carousel-control" type="button">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </button>
+        <button class="carousel-control-next custom-carousel-control" type="button">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </button>
+      </div>
+  </section>
+
+  <!-- JS carrossel -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  <!-- CARDS -->
+  <section class="conteudo">
+    <ul class="cards">
+      <li class="cards_item">
+        <div class="card">
+          <a href="#">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+            <div class="card_content">
+              <h2 class="card_title">25/05 <br> Titulo Palestra</h2>
+              <p class="card_text">Descrição palestra</p>
+              <button class="btn-cd card_btn">SAIBA MAIS</button>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <a href="#">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+            <div class="card_content">
+              <h2 class="card_title">25/05 <br> Titulo Palestra</h2>
+              <p class="card_text">Descrição palestra</p>
+              <button class="btn-cd card_btn">SAIBA MAIS</button>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <a href="#">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+            <div class="card_content">
+              <h2 class="card_title">25/05 <br> Titulo Palestra</h2>
+              <p class="card_text">Descrição palestra</p>
+              <button class="btn-cd card_btn">SAIBA MAIS</button>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <a href="#">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
+            <div class="card_content">
+              <h2 class="card_title">25/05 <br> Titulo Palestra</h2>
+              <p class="card_text">Descrição palestra</p>
+              <button class="btn-cd card_btn">SAIBA MAIS</button>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <a href="#">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
+            <div class="card_content">
+              <h2 class="card_title">25/05 <br> Titulo Palestra</h2>
+              <p class="card_text">Descrição palestra</p>
+              <button class="btn-cd card_btn">SAIBA MAIS</button>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <a href="#">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
+            <div class="card_content">
+              <h2 class="card_title">25/05 <br> Titulo Palestra</h2>
+              <p class="card_text">Descrição palestra </p>
+              <button class="btn-cd card_btn">SAIBA MAIS</button>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <a href="#">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
+            <div class="card_content">
+              <h2 class="card_title">25/05 <br> Titulo Palestra</h2>
+              <p class="card_text">Descrição palestra </p>
+              <button class="btn-cd card_btn">SAIBA MAIS</button>
+            </div>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="padding: 3% 0% 3%;">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <p class="footer-sede"><b>FACULDADE SENAC</b> <br> 913 Sul <br> Brasília DF <br> CEP: 70390-135</p>
+        </div>
+        <div class="col-4">
+          <img src="IMG/assinatura-logo-sistema.png" style="width: 100%;" alt="">
+        </div>
+        <div class="col-2">
+
+        </div>
+        <div class="col-2">
+          <div class="social-icons">
+            <p class="footer-autor" style="margin-left: 13%;"><B>Nossas redes</B></p>
+            <a href="https://www.instagram.com/senacdf" class="social-icon"><i class="fa-brands fa-instagram"
+                style="transition: all 0.3s ease-out !important;"></i></a>
+            <a href="https://www.facebook.com/senacdistritofederal" class="social-icon"><i
+                class="fa-brands fa-facebook-f"
+                style="transition: all 0.3s ease-out !important; margin-left: 10px;"></i></a>
+            <a href="https://twitter.com/senacdf" class="social-icon"><i class="fa-brands fa-twitter"
+                style="transition: all 0.3s ease-out !important; margin-left: 10px; "></i></a>
+            <a href=" https://www.linkedin.com/school/senacdf/" class="social-icon"><i class="fa-brands fa-linkedin-in"
+                style="transition: all 0.3s ease-out !important; margin-left: 10px;"></i></a>
+            <a href="https://www.youtube.com/c/senacdistritofederal" class="social-icon"><i class="fa-brands fa-youtube"
+                style="transition: all 0.3s ease-out !important; margin-left: 10px;"></i></a>
+            <a href="https://www.flickr.com/photos/186818797@N04/albums" class="social-icon"><i
+                class="fa-brands fa-flickr"
+                style="transition: all 0.3s ease-out !important ; margin-left: 10px;"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </footer>
+
+</body>
+
+</html>
